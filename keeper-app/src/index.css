@@ -1,33 +1,135 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #eee;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #f5ba13;
-  padding: 16px;
+/* ✅ LIGHT THEME (default) */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f1f3f6;
+}
+
+/* ✅ Container toggle */
+.dark {
+  background: #121212;
   color: white;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #fbbc04;
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 
 header h1 {
-  margin: 0;
+  color: white;
 }
 
+/* Toggle button */
+.dark-toggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* ✅ Create Box (LIGHT) */
+.create-note {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Inputs */
+.create-note input,
+.create-note textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* Button */
+.create-note button {
+  float: right;
+  border: none;
+  background: #fbbc04;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+/* Notes container */
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Note (LIGHT) */
 .note {
   background: white;
-  width: 240px;
-  margin: 20px;
+  width: 260px;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  position: relative;
 }
 
+/* Delete button */
+.delete-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
+  margin-top: 30px;
   color: gray;
+}
+
+/* ✅ ✅ DARK MODE OVERRIDES */
+.dark header {
+  background: #333;
+}
+
+.dark .create-note {
+  background: #2b2b2b;
+  color: white;
+}
+
+.dark .note {
+  background: #2b2b2b;
+  color: white;
+}
+
+.dark input,
+.dark textarea {
+  background: #444;
+  color: white;
+}
+
+.dark .dark-toggle {
+  background: #fbbc04;
 }

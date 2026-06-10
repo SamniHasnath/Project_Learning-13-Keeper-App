@@ -1,9 +1,9 @@
-function Footer() {
-  const currentYear = new Date().getFullYear();
+import React from "react";
 
+function Footer() {
   return (
     <footer>
-      <p>Copyright © {currentYear}</p>
+      <p>© {new Date().getFullYear()} Keeper App</p>
     </footer>
   );
 }
