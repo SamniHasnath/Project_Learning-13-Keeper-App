@@ -231,10 +231,10 @@ Users can switch between themes directly from the application header.
 ## 📸 Screenshots
 
 🔹 Light Mode
-<img width="811" height="300" alt="image" src="https://github.com/user-attachments/assets/4a346a65-212c-4c2b-a98e-c2c2f5184a04" />
+<img width="311" height="300" alt="image" src="https://github.com/user-attachments/assets/4a346a65-212c-4c2b-a98e-c2c2f5184a04" />
 
 🔹 Dark Mode
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/956b612c-a93f-476c-817a-3913a2a7afb2" />
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/956b612c-a93f-476c-817a-3913a2a7afb2" />
 
 ---
 
